@@ -1,0 +1,278 @@
+ :root {
+   font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+   line-height: 1.5;
+   font-weight: 400;
+   color-scheme: dark;
+   color: rgba(255, 255, 255, 0.87);
+   background-color: #000;
+ }
+
+ body {
+   margin: 0;
+   padding: 0;
+   width: 100vw;
+   height: 100vh;
+   overflow: hidden;
+ }
+
+ #root {
+   width: 100%;
+   height: 100%;
+ }
+
+ button {
+   font-family: inherit;
+ }
+
+ .slideshow-container {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   background: #000;
+   overflow: hidden;
+ }
+
+ .slide-wrapper {
+   position: absolute;
+   inset: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .slide-bg {
+   position: absolute;
+   inset: -50px;
+   /* Bleed for blur */
+   background-size: cover;
+   background-position: center;
+   filter: blur(60px) brightness(0.3);
+   z-index: 0;
+   transform: scale(1.1);
+   /* Avoid white edges */
+ }
+
+ .slide-image {
+   position: relative;
+   z-index: 1;
+   max-width: 95%;
+   /* Leave some margin */
+   max-height: 95%;
+   width: auto;
+   height: auto;
+   object-fit: contain;
+   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+   border-radius: 4px;
+ }
+
+ .text-overlay {
+   position: absolute;
+   bottom: 140px;
+   max-width: 700px;
+   z-index: 10;
+   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.9);
+   pointer-events: none;
+   /* Default is left aligned, but we can override */
+ }
+
+ .text-overlay.text-left {
+   left: 80px;
+   text-align: left;
+ }
+
+ .text-overlay.text-right {
+   right: 80px;
+   text-align: right;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+ }
+
+ .text-overlay h1 {
+   font-size: 4rem;
+   font-weight: 700;
+   line-height: 1.1;
+   margin: 0 0 0.5rem 0;
+   color: white;
+   letter-spacing: -0.02em;
+ }
+
+ .text-overlay p {
+   font-size: 1.4rem;
+   font-weight: 400;
+   color: rgba(255, 255, 255, 0.8);
+   margin: 0;
+ }
+
+ .controls-bar {
+   position: absolute;
+   bottom: 50px;
+   left: 50%;
+   transform: translateX(-50%);
+   display: flex;
+   align-items: center;
+   gap: 1.2rem;
+   padding: 12px 32px;
+   background: rgba(20, 20, 20, 0.7);
+   backdrop-filter: blur(16px);
+   -webkit-backdrop-filter: blur(16px);
+   border-radius: 9999px;
+   border: 1px solid rgba(255, 255, 255, 0.08);
+   z-index: 20;
+   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+ }
+
+ .control-btn {
+   background: transparent;
+   border: none;
+   cursor: pointer;
+   color: rgba(255, 255, 255, 0.7);
+   padding: 8px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: all 0.2s;
+ }
+
+ .control-btn:hover {
+   background: rgba(255, 255, 255, 0.1);
+   color: white;
+   transform: scale(1.1);
+ }
+
+ .control-btn-primary {
+   background: white;
+   color: black;
+   border: none;
+   cursor: pointer;
+   width: 56px;
+   height: 56px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: transform 0.2s, box-shadow 0.2s;
+   box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+ }
+
+ .control-btn-primary:hover {
+   transform: scale(1.05);
+   box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+ }
+
+ .control-btn-primary:active {
+   transform: scale(0.95);
+ }
+
+ .divider {
+   width: 1px;
+   height: 24px;
+   background: rgba(255, 255, 255, 0.1);
+   margin: 0 4px;
+ }
+
+ .duration-control {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   color: rgba(255, 255, 255, 0.7);
+ }
+
+ .duration-select {
+   background: transparent;
+   border: none;
+   color: rgba(255, 255, 255, 0.9);
+   font-family: inherit;
+   font-size: 0.9rem;
+   cursor: pointer;
+   outline: none;
+   padding: 4px;
+ }
+
+ .duration-select option {
+   background: #222;
+   color: white;
+ }
+
+ .progress-container {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 6px;
+   display: flex;
+   z-index: 30;
+   opacity: 0.5;
+   transition: opacity 0.3s;
+ }
+
+ .progress-container:hover {
+   opacity: 1;
+ }
+
+ .progress-segment {
+   flex: 1;
+   background: rgba(255, 255, 255, 0.1);
+   margin-right: 2px;
+   height: 100%;
+ }
+
+ .progress-segment:last-child {
+   margin-right: 0;
+ }
+
+ .progress-fill {
+   width: 0%;
+   height: 100%;
+   background: #fff;
+   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+   transform-origin: left;
+ }
+
+ .progress-fill.active {
+   animation: progressFill linear forwards;
+ }
+
+ .progress-fill.completed {
+   width: 100%;
+ }
+
+ @keyframes progressFill {
+   from {
+     width: 0%;
+   }
+
+   to {
+     width: 100%;
+   }
+ }
+
+ @media (max-width: 768px) {
+   .text-overlay h1 {
+     font-size: 2rem;
+   }
+
+   .text-overlay p {
+     font-size: 1rem;
+   }
+
+   .text-overlay {
+     bottom: 120px;
+     left: 20px;
+     right: 20px;
+   }
+
+   .controls-bar {
+     bottom: 20px;
+     padding: 8px 16px;
+     gap: 0.8rem;
+   }
+
+   .control-btn-primary {
+     width: 44px;
+     height: 44px;
+   }
+ }
