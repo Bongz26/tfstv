@@ -109,6 +109,43 @@ function App() {
               </motion.p>
             )}
           </div>
+
+          {/* Subtle Brand Watermark */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 0.25 }}
+            transition={{ delay: 1.5, duration: 1 }}
+            style={{
+              position: 'absolute',
+              top: '40px',
+              right: '40px',
+              zIndex: 5,
+              fontFamily: 'Playfair Display, serif',
+              fontSize: '1.2rem',
+              fontWeight: 600,
+              color: 'white',
+              letterSpacing: '0.1em',
+              textShadow: '0 2px 10px rgba(0, 0, 0, 0.6)',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px'
+            }}
+          >
+            <span style={{
+              width: '40px',
+              height: '40px',
+              borderRadius: '50%',
+              background: 'linear-gradient(135deg, #D4AF37, #f0d98f)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontWeight: 700,
+              fontSize: '1.5rem',
+              color: '#1a1a1a',
+              boxShadow: '0 4px 15px rgba(212, 175, 55, 0.3)'
+            }}>T</span>
+            <span>THUSANANG</span>
+          </motion.div>
         </motion.div>
       </AnimatePresence>
 
