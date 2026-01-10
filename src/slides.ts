@@ -67,5 +67,53 @@ export const slides: Slide[] = [
         url: "/about-img.jpg",
         title: "Compassionate Care",
         subtitle: "Walking this journey with you, every step of the way"
+    },
+    {
+        id: 11,
+        url: "/casket_marble.png",
+        title: "Luxury Marble Finish",
+        subtitle: "Elegant and unique patterned design"
+    },
+    {
+        id: 12,
+        url: "/casket_last_supper.png",
+        title: "Religious Tribute",
+        subtitle: "Featuring the Last Supper with illuminated detail"
+    },
+    {
+        id: 13,
+        url: "/casket_stone.png",
+        title: "Stone Pattern Collection",
+        subtitle: "Durable and distinguished appearance"
+    },
+    {
+        id: 14,
+        url: "/casket_black.jpg",
+        title: "Executive Black",
+        subtitle: "Classic sophistication for a dignified farewell"
+    },
+    {
+        id: 15,
+        url: "/casket_sparkle_black.png",
+        title: "Starlight Collection",
+        subtitle: "A glimmering tribute to a shining life"
+    },
+    {
+        id: 16,
+        url: "/casket_black_gold.png",
+        title: "Royalty Gold & Black",
+        subtitle: "Regal patterning for a distinguished service"
+    },
+    {
+        id: 17,
+        url: "/casket_childrens_white.png",
+        title: "Angelic White",
+        subtitle: "Pure and gentle resting place"
+    },
+    {
+        id: 18,
+        url: "/casket_white_marble.png",
+        title: "White Marble Elegance",
+        subtitle: "Serene white marble finish"
     }
 ];
