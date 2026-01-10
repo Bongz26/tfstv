@@ -22,7 +22,7 @@ export const slides: Slide[] = [
     },
     {
         id: 3,
-        url: "/lincoln.jpg",
+        url: "/service-fleet.png",
         title: "Executive Fleet",
         subtitle: "Professional and dignified transport for the final journey"
     },
