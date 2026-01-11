@@ -113,7 +113,7 @@ function App() {
           {/* Subtle Brand Watermark */}
           <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: 0.25 }}
+            animate={{ opacity: 1 }}
             transition={{ delay: 1.5, duration: 1 }}
             style={{
               position: 'absolute',
@@ -131,20 +131,15 @@ function App() {
               gap: '8px'
             }}
           >
-            <span style={{
-              width: '40px',
-              height: '40px',
-              borderRadius: '50%',
-              background: 'linear-gradient(135deg, #D4AF37, #f0d98f)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontWeight: 700,
-              fontSize: '1.5rem',
-              color: '#1a1a1a',
-              boxShadow: '0 4px 15px rgba(212, 175, 55, 0.3)'
-            }}>T</span>
-            <span>THUSANANG</span>
+            <img
+              src="/logo-header.png"
+              alt="Thusanang Funeral Services"
+              style={{
+                height: '120px',
+                width: 'auto',
+                filter: 'drop-shadow(0 2px 10px rgba(0,0,0,0.5))'
+              }}
+            />
           </motion.div>
         </motion.div>
       </AnimatePresence>
