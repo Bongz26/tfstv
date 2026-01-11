@@ -115,5 +115,101 @@ export const slides: Slide[] = [
         url: "/casket_white_marble.png",
         title: "White Marble Elegance",
         subtitle: "Serene white marble finish"
+    },
+    {
+        id: 19,
+        url: "/WhatsApp Image 2026-01-10 at 09.58.00.jpeg",
+        title: "Burgundy Premium",
+        subtitle: "Rich wine finish with luxurious pink interior"
+    },
+    {
+        id: 20,
+        url: "/WhatsApp Image 2026-01-10 at 09.58.03.jpeg",
+        title: "Silver Sparkle",
+        subtitle: "Shimmering silver glitter finish"
+    },
+    {
+        id: 21,
+        url: "/WhatsApp Image 2026-01-10 at 09.58.06 (1).jpeg",
+        title: "Traditional Wood Finish",
+        subtitle: "Classic wooden craftsmanship"
+    },
+    {
+        id: 22,
+        url: "/WhatsApp Image 2026-01-10 at 09.58.08.jpeg",
+        title: "White Rose",
+        subtitle: "Pure white with delicate pink tufted interior"
+    },
+    {
+        id: 23,
+        url: "/WhatsApp Image 2026-01-10 at 09.58.08 (1).jpeg",
+        title: "Cherry Wood Premium",
+        subtitle: "Deep cherry finish with custom Last Supper detail"
+    },
+    {
+        id: 24,
+        url: "/WhatsApp Image 2026-01-10 at 09.58.10.jpeg",
+        title: "Checkered Elegance",
+        subtitle: "Distinctive black and white pattern"
+    },
+    {
+        id: 25,
+        url: "/WhatsApp Image 2026-01-10 at 09.58.11.jpeg",
+        title: "Resting Roses",
+        subtitle: "Burgundy with embroidered rose detail"
+    },
+    {
+        id: 26,
+        url: "/WhatsApp Image 2026-01-10 at 09.58.15.jpeg",
+        title: "Golden Oak",
+        subtitle: "Warm golden oak finish with detailed craftsmanship"
+    },
+    {
+        id: 27,
+        url: "/WhatsApp Image 2026-01-10 at 09.58.16.jpeg",
+        title: "Midnight Blue Tribute",
+        subtitle: "Black with illuminated Last Supper panel"
+    },
+    {
+        id: 28,
+        url: "/WhatsApp Image 2026-01-10 at 09.58.16 (1).jpeg",
+        title: "Premium Walnut",
+        subtitle: "Rich walnut finish with ornate corners"
+    },
+    {
+        id: 29,
+        url: "/WhatsApp Image 2026-01-10 at 09.58.17.jpeg",
+        title: "Cowhide Heritage",
+        subtitle: "Traditional African cowhide pattern with blue detail"
+    },
+    {
+        id: 30,
+        url: "/WhatsApp Image 2026-01-10 at 09.58.17 (1).jpeg",
+        title: "Pearl White",
+        subtitle: "Elegant pearl white finish"
+    },
+    {
+        id: 31,
+        url: "/WhatsApp Image 2026-01-10 at 09.58.17 (2).jpeg",
+        title: "Mahogany Classic",
+        subtitle: "Traditional mahogany with refined details"
+    },
+    {
+        id: 32,
+        url: "/WhatsApp Image 2026-01-10 at 09.58.19.jpeg",
+        title: "Bronze Heritage",
+        subtitle: "Bronze finish with classic styling"
+    },
+    {
+        id: 33,
+        url: "/WhatsApp Image 2026-01-10 at 09.58.20.jpeg",
+        title: "Champagne Gold",
+        subtitle: "Luxurious champagne gold finish"
+    },
+    {
+        id: 34,
+        url: "/WhatsApp Image 2026-01-10 at 09.58.23.jpeg",
+        title: "Rosewood Prestige",
+        subtitle: "Deep rosewood with elegant accents"
     }
 ];
