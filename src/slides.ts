@@ -115,8 +115,8 @@ export const slides: Slide[] = [
         url: "/casket_white_marble.png",
         title: "White Marble Elegance",
         subtitle: "Serene white marble finish"
-    },
-    {
+    }
+    /*{
         id: 19,
         url: "/WhatsApp Image 2026-01-10 at 09.58.00.jpeg",
         title: "Burgundy Premium",
@@ -211,5 +211,5 @@ export const slides: Slide[] = [
         url: "/WhatsApp Image 2026-01-10 at 09.58.23.jpeg",
         title: "Rosewood Prestige",
         subtitle: "Deep rosewood with elegant accents"
-    }
+    }*/
 ];
