@@ -75,11 +75,31 @@ export const slides: Slide[] = [
         subtitle: "Preserving the legacy for generations to come"
     },
     {
+        id: 21,
+        url: "/UNVEILING2.png",
+        title: "Honored Memories",
+        subtitle: "Beautiful settings for your unveiling ceremony"
+    },
+    {
+        id: 22,
+        url: "/UNVEILINGb.png",
+        title: "Detailed Craftsmanship",
+        subtitle: "Excellence in every detail of our memorial work"
+    },
+    {
         id: 12,
         url: "/about-img.jpg",
         title: "Compassionate Care",
         subtitle: "Walking this journey with you, every step of the way"
     },
+
+    {
+        id: 14,
+        url: "/casket_last_supper.png",
+        title: "Religious Tribute",
+        subtitle: "Featuring the Last Supper with illuminated detail"
+    },
+    /*
     {
         id: 13,
         url: "/casket_marble.png",
@@ -87,17 +107,17 @@ export const slides: Slide[] = [
         subtitle: "Elegant and unique patterned design"
     },
     {
-        id: 14,
-        url: "/casket_last_supper.png",
-        title: "Religious Tribute",
-        subtitle: "Featuring the Last Supper with illuminated detail"
-    },
-    {
         id: 15,
         url: "/casket_stone.png",
         title: "Stone Pattern Collection",
         subtitle: "Durable and distinguished appearance"
     },
+       {
+        id: 18,
+        url: "/casket_black_gold.png",
+        title: "Royalty Gold & Black",
+        subtitle: "Regal patterning for a distinguished service"
+    },*/
     {
         id: 16,
         url: "/casket_black.jpg",
@@ -110,12 +130,7 @@ export const slides: Slide[] = [
         title: "Starlight Collection",
         subtitle: "A glimmering tribute to a shining life"
     },
-    {
-        id: 18,
-        url: "/casket_black_gold.png",
-        title: "Royalty Gold & Black",
-        subtitle: "Regal patterning for a distinguished service"
-    },
+
     {
         id: 19,
         url: "/casket_childrens_white.png",
