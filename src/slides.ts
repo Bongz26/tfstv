@@ -142,6 +142,48 @@ export const slides: Slide[] = [
         url: "/casket_white_marble.png",
         title: "White Marble Elegance",
         subtitle: "Serene white marble finish"
+    },
+    {
+        id: 23,
+        url: "/LERA.png",
+        title: "December Competition",
+        subtitle: "Celebrating Excellence and Dedication"
+    },
+    {
+        id: 24,
+        url: "/Ladies Staff e.png",
+        title: "Team Spirit",
+        subtitle: "United in our commitment to service"
+    },
+    {
+        id: 25,
+        url: "/Maj.png",
+        title: "Leadership & Vision",
+        subtitle: "Guiding thusanang towards new horizons"
+    },
+    {
+        id: 26,
+        url: "/kar.png",
+        title: "Award Ceremony",
+        subtitle: "Recognizing outstanding contributions"
+    },
+    {
+        id: 27,
+        url: "/ladiess.png",
+        title: "Ladies of Thusanang",
+        subtitle: "Grace, dignity, and professional care"
+    },
+    {
+        id: 28,
+        url: "/majj.png",
+        title: "Moments of Pride",
+        subtitle: "Celebrating our achievements together"
+    },
+    {
+        id: 29,
+        url: "/mjj.png",
+        title: "Staff Appreciation",
+        subtitle: "Honoring our hardworking team members"
     }
 
 ];
